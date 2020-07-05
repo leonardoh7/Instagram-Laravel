@@ -7,15 +7,15 @@
             <img src="/images/larvelLogo.png" class="rounded-circle" height="150"/>
         </div>
         <div class="col-9 pt-5">
-            <div><h1>Laravel</h1></div>
+            <div><h1>{{ $user->username }}</h1></div>
             <div class="d-flex">
                 <div class="pr-5"><strong>100</strong> posts</div>
                 <div class="pr-5"><strong>100k</strong> followers</div>
                 <div class="pr-5"><strong>100k</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">laravel.com</div>
-            <div>Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.</div>
-            <div><a href="laravel.com">www.laravel.com</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
 
