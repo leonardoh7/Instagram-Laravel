@@ -19,9 +19,7 @@ class PostsController extends Controller
            'image' => ['required', 'image'],
         ]);
 
-        $post = new Post();
-        $post->caption = $data['caption'];
-        $post->save();
+        Post::create($data);
 
         dd(request()->all());
     }
