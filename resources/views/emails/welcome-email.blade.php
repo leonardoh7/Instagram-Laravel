@@ -1,12 +1,12 @@
 @component('mail::message')
-# Introduction
+# Welcome to Laragram
 
-The body of your message.
+Thanks for register to Laragram, let's roll.
 
 @component('mail::button', ['url' => ''])
-Button Text
+Let's get ahead to the page
 @endcomponent
 
 Thanks,<br>
-{{ config('app.name') }}
+Leo
 @endcomponent
